@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\juany\\source\\repos\\Test-CI-CD\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C33CC6-EC19-4B15-B652-1D154C2A7928}|TestOperation\\TestOperation.csproj|c:\\users\\juany\\source\\repos\\test-ci-cd\\testoperation\\testoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C33CC6-EC19-4B15-B652-1D154C2A7928}|TestOperation\\TestOperation.csproj|solutionrelative:testoperation\\testoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DE94F09-989B-285F-3AAF-74D658AD2CF5}|Test-CI-CD\\Test-CI-CD.csproj|c:\\users\\juany\\source\\repos\\test-ci-cd\\test-ci-cd\\services\\operationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DE94F09-989B-285F-3AAF-74D658AD2CF5}|Test-CI-CD\\Test-CI-CD.csproj|solutionrelative:test-ci-cd\\services\\operationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C33CC6-EC19-4B15-B652-1D154C2A7928}|TestOperation\\TestOperation.csproj|c:\\users\\juany\\source\\repos\\test-ci-cd\\testoperation\\testoperation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A5C33CC6-EC19-4B15-B652-1D154C2A7928}|TestOperation\\TestOperation.csproj|solutionrelative:testoperation\\testoperation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OperationService.cs",
+              "DocumentMoniker": "C:\\Users\\juany\\source\\repos\\Test-CI-CD\\Test-CI-CD\\Services\\OperationService.cs",
+              "RelativeDocumentMoniker": "Test-CI-CD\\Services\\OperationService.cs",
+              "ToolTip": "C:\\Users\\juany\\source\\repos\\Test-CI-CD\\Test-CI-CD\\Services\\OperationService.cs",
+              "RelativeToolTip": "Test-CI-CD\\Services\\OperationService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T17:44:36.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestOperation",
+              "DocumentMoniker": "C:\\Users\\juany\\source\\repos\\Test-CI-CD\\TestOperation\\TestOperation.csproj",
+              "RelativeDocumentMoniker": "TestOperation\\TestOperation.csproj",
+              "ToolTip": "C:\\Users\\juany\\source\\repos\\Test-CI-CD\\TestOperation\\TestOperation.csproj",
+              "RelativeToolTip": "TestOperation\\TestOperation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-03T17:32:11.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestOperation.cs",
+              "DocumentMoniker": "C:\\Users\\juany\\source\\repos\\Test-CI-CD\\TestOperation\\TestOperation.cs",
+              "RelativeDocumentMoniker": "TestOperation\\TestOperation.cs",
+              "ToolTip": "C:\\Users\\juany\\source\\repos\\Test-CI-CD\\TestOperation\\TestOperation.cs*",
+              "RelativeToolTip": "TestOperation\\TestOperation.cs*",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwEkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T17:31:15.466Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

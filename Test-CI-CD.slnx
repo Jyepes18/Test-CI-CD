@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Test-CI-CD/Test-CI-CD.csproj" />
+  <Project Path="TestOperation/TestOperation.csproj" Id="a5c33cc6-ec19-4b15-b652-1d154c2a7928" />
 </Solution>
