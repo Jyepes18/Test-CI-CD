@@ -2,45 +2,43 @@ name: Continuous Delivery
 
 on:
   push:
-  branches: [ master ]
+    branches:
+      - master
 
 jobs:
   deploy_lambda:
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-```
-steps:
-  - name: Checkout
-    uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
 
-  - name: Setup .NET
-    uses: actions/setup-dotnet@v4
-    with:
-      dotnet-version: 10.0.x
+      - name: Restore
+        run: dotnet restore
 
-  - name: Restore
-    run: dotnet restore
+      - name: Build
+        run: dotnet publish -c Release -o publish
 
-  - name: Build
-    run: dotnet publish -c Release -o publish
+      - name: Zip Lambda
+        run: |
+          cd publish
+          zip -r ../lambda.zip .
 
-  - name: Zip Lambda
-    run: |
-      cd publish
-      zip -r ../lambda.zip .
+      - name: Install AWS CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y awscli
 
-  - name: Install AWS CLI
-    run: |
-      sudo apt-get update
-      sudo apt-get install -y awscli
-
-  - name: Deploy to LocalStack Lambda
-    env:
-      AWS_ACCESS_KEY_ID: test
-      AWS_SECRET_ACCESS_KEY: test
-      AWS_DEFAULT_REGION: us-east-1
-    run: |
-      aws --endpoint-url=http://192.168.1.18:4566 lambda update-function-code \
-      --function-name mi-lambda \
-      --zip-file fileb://lambda.zip
-  
+      - name: Deploy to LocalStack Lambda
+        env:
+          AWS_ACCESS_KEY_ID: test
+          AWS_SECRET_ACCESS_KEY: test
+          AWS_DEFAULT_REGION: us-east-1
+        run: |
+          aws --endpoint-url=http://192.168.1.18:4566 lambda update-function-code \
+            --function-name mi-lambda \
+            --zip-file fileb://lambda.zip
