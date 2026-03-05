@@ -8,18 +8,14 @@ namespace Test_CI_CD.Services
         {
             return num1 + num2;
         }
-
         public async Task<int> Subtract(int num1, int num2)
         {
             return num1 - num2;
         }
-        
-
         public async Task<int> Multiply(int num1, int num2)
         {
             return num1 * num2;
         }
-
         public async Task<int> Divide(int num1, int num2)
         {
             if (num2 == 0)
